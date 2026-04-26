@@ -69,7 +69,6 @@ np.random.seed(42)
 N_ITER  = 10_000
 # Fixed for Streamlit Cloud deployment: no folder creation required
 OUT_DIR = "." 
-# No os.makedirs needed because the current directory always exists
 
 C = {
     "green": "#198754", "green_lt": "#D1E7DD",
