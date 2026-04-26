@@ -67,8 +67,9 @@ plt.rcParams.update({
 
 np.random.seed(42)
 N_ITER  = 10_000
-OUT_DIR = "."           # ← Colab default. Change to your folder if needed.
-os.makedirs(OUT_DIR, exist_ok=True)
+# Fixed for Streamlit Cloud deployment
+OUT_DIR = os.getcwd() 
+# No os.makedirs needed because the current directory always exists
 
 C = {
     "green": "#198754", "green_lt": "#D1E7DD",
